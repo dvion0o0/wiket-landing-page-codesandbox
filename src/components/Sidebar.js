@@ -5,7 +5,7 @@ function Sidebar({ closeToggle, toggle }) {
   return (
     <aside className={`${toggle ? "active" : null}`}>
       <div className="sidebar-center">
-        <AiOutlineClose className="close" />
+        <AiOutlineClose className="close" onClick={closeToggle} />
         <ul className="sidebar-links">
           <li>
             <a href="/" className="side-link">
